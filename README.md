@@ -20,7 +20,7 @@ On startup it tries to connect to the database and informs the user about its su
 After successful connection, the program should support the commands provided on standard input.
 
 **Guidlines to use an app:**
-- If the user enters "l" it lists the movies (each on a separate line), following this format:
+If the user enters "l" it lists the movies (each on a separate line), following this format:
  <title> by in , Starring: - at age - at age - If the user adds the "-t" switch, after that between quotes a regex can be given to match the title with. 
 
 Example: l -t "Die .*" -v - 
@@ -34,7 +34,7 @@ By default movies are listed alphabetically by their title. If one of the orderi
 
 Switches can be in any order. In case of parametrized switches, the parameter should be right after the switch. Check and handle any incorrect query format (example: both -la and -ld are present, no parameter after -d, and regexes are not quoted or corrupted). Inform user about the bad input format.
 
-- If the user enters "a" then they can add new entries to the database
+If the user enters "a" then they can add new entries to the database
 	- "a -p" allows to add new people. After entering this the user will be prompted to give a name and the year of birth for the person.
 	- "a -m" allows to add new movie. After entering this the user will be prompted to give a title, then give the length in hh:mm format, then name the director, then give the year of release, finally name the actors. Actors are given line by line. When an actor (or the director) is not available in the database, print an error message. Do this until a correct name is entered. In case of actors "exit" is a special value, this will finalize the record and add it to the database.
 	- Output should be something like this:
@@ -52,4 +52,4 @@ Switches can be in any order. In case of parametrized switches, the parameter sh
 		> Natalie Portman
 		> exit
 
-- With "d -p" users can delete people from the database. After -p switch, a string should be added. If it is the exact name of a person in the database, deletes them, and also deletes them from every movie they starred in. If they are a director in a movie, then we cannot delete them and the program should notify the user about this. The program should also notify the user if the person cannot be found in the database.
+With "d -p" users can delete people from the database. After -p switch, a string should be added. If it is the exact name of a person in the database, deletes them, and also deletes them from every movie they starred in. If they are a director in a movie, then we cannot delete them and the program should notify the user about this. The program should also notify the user if the person cannot be found in the database.
