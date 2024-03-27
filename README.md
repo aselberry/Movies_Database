@@ -1,4 +1,5 @@
 **About**
+
 A Java console application developed to list and alter a database of movies, directors and actors. It uses a file handling to retrieve and modify data. 
 
 **Tools and Technology Stack**
