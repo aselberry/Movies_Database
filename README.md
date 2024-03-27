@@ -22,7 +22,7 @@ After successful connection, the program should support the commands provided on
 **Guidlines to use an app:**
 - If the user enters "l" it lists the movies (each on a separate line), following this format:
   <title> by <director> in <year>, <length>  
-	- length should be rendered in hh:mm format with leading zeros  
+- length should be rendered in hh:mm format with leading zeros
 - If the user types "l -v" the entry for a movie will be shown in this format:  
 <title> by <director> in <year>, <length>
 	Starring:
