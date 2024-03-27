@@ -1,0 +1,8 @@
+Kurmanjan Datka;Adolf Adam-1998;2023;30;Asel Temiralieva-2004,Mary Queen-1996,Natali Boyarskaya-1997,Andrew Andras-2000
+With love Rose;Mehrez Ayari-1988;2050;30;Sam Claflin-1997,Christian Cooke-1996,Jaime Winstone-2003
+Matrix;John Patison-1979;2000;60;Keanu Reeves-1997,Hugo Weaving-1996,Aruuzhan Bek-2003
+Start Wars;Martin John-1998;2012;140;Mark Hamill-2000,Harrison Ford-1998,Aruu John-2003
+Actress;Julia Szabo-1980;2009;147;Aisel Gerge-2006,Aitilek Kutmanova-1986,Bermet Aikyn-1990
+University;Feri Tamas-2004;2050;148;Nurbek Asyl-2000,Aibars Baatyr-1993,Aruuzat Kasymova-2007
+The Witness;Peter Bacso-1928;1969;105;Ferenc Kallai-1925,Lajos Oze-1935
+Matrix 2;John Patison-1979;2000;60;Keanu Reeves-1997,Hugo Weaving-1996,Aselka Dobulbek-2003
