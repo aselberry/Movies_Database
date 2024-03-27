@@ -21,23 +21,18 @@ After successful connection, the program should support the commands provided on
 
 **Guidlines to use an app:**
 - If the user enters "l" it lists the movies (each on a separate line), following this format:
-  <title> by <director> in <year>, <length>  
-- length should be rendered in hh:mm format with leading zeros
-- If the user types "l -v" the entry for a movie will be shown in this format:  
-<title> by <director> in <year>, <length>
-	Starring:
-		- <actor1 name> at age <age in years at the release of the film>
-		- <actor2 name> at age <age in years at the release of the film>
-- If the user adds the "-t" switch, after that between quotes a regex can be given to match the title with. Example:
-	l -t "Die .*" -v
-		- That will print Die Hard 1. and Die Hard 2. with its starring
-- The user can also add a -d switch. After that a regex should be given to filter the results by the movie's director
-- We can add an -a switch as well. After that we can give a regex. It should list all of the movies that have at least one actor whose name matches with the regex
--la switch lists the movies with ascending order by their length
--ld switch lists the movies with descending order by their length
-	- By default movies are listed alphabetically by their title. If one of the ordering switches present, the same length movies should be ordered alphabetically by their titles
-- Switches can be in any order. In case of parametrized switches, the parameter should be right after the switch
-- Check and handle any incorrect query format (example: both -la and -ld are present, no parameter after -d, regexes are not quoted or corrupted). Inform user about the bad input format
+ <title> by in , Starring: - at age - at age - If the user adds the "-t" switch, after that between quotes a regex can be given to match the title with. 
+
+Example: l -t "Die .*" -v - 
+That will print Die Hard 1. and Die Hard 2. with its starring.
+
+The user can also add a -d switch. After that a regex should be given to filter the results by the movie's director.
+
+We can add an -a switch as well. After that we can give a regex. It should list all of the movies that have at least one actor whose name matches with the regex -la switch lists the movies with ascending order by their length -ld switch lists the movies with descending order by their length.
+
+By default movies are listed alphabetically by their title. If one of the ordering switches present, the same length movies should be ordered alphabetically by their titles.
+
+Switches can be in any order. In case of parametrized switches, the parameter should be right after the switch. Check and handle any incorrect query format (example: both -la and -ld are present, no parameter after -d, and regexes are not quoted or corrupted). Inform user about the bad input format.
 
 - If the user enters "a" then they can add new entries to the database
 	- "a -p" allows to add new people. After entering this the user will be prompted to give a name and the year of birth for the person.
